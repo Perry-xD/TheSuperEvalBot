@@ -17,7 +17,7 @@ API_HASH = os.environ.get("API_HASH", None) # YOUR API HASH
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None) # YOUR BOT TOKEN
 OWNER_ID = int(os.environ.get("OWNER_ID", 0) # YOUR USER ID
 
-bot = tg("godboy", api_id=API_ID, api_hash=API_HASH).start(bot_token=BOT_TOKEN)
+bot = tg("godboy", api_id=API_ID, api_hash=API_HASH)
 
 
 @bot.on(events.NewMessage(pattern="/start"))
@@ -157,4 +157,5 @@ async def aexec(code, smessatatus):
 
 
 if __name__ == "__main__":
-  bot.run_until_disconnected()
+  
+  bot.start(bot_token=BOT_TOKEN)
