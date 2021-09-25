@@ -1,0 +1,38 @@
+{
+    "name": "The Super Eval Bot",
+    "description": "Welcome to This Super Eval Bot. Hope you will enjoy😅❤",
+    "logo": "",
+    "keywords": [
+        "telegram",
+        "telethon",
+        "telegram-bot",
+        "Perry_xD",
+        "TheSuperEvalBot"
+    ],
+    "repository": "https://github.com/Perry-xD/TheSuperEvalBot",
+    "website": "t.me/Tilak_xD",
+    "success_url": "https://t.me/TheSuperEvalBot",
+    "env": {
+        "API_HASH": {
+            "description": "You API HASH from my.telegram.org",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "You API ID from my.telegram.org",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Bot token, get it from @BotFather.",
+            "value": ""
+        },
+        "OWNER_ID": {
+            "description": "OWNER ID ADD HERE",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
