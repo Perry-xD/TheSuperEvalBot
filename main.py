@@ -1,5 +1,5 @@
 import subprocess
-from telethon import TelegramClient as tg
+from telethon import TelegramClient
 import asyncio
 import traceback
 import io
@@ -17,7 +17,7 @@ API_HASH = os.environ.get("API_HASH", None) # YOUR API HASH
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None) # YOUR BOT TOKEN
 OWNER_ID = int(os.environ.get("OWNER_ID", 0) # YOUR USER ID
 
-bot = tg("godboy", API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+bot = TelegramClient("godboy", API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
 
 @bot.on(events.NewMessage(pattern="/start"))
