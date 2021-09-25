@@ -17,7 +17,7 @@ API_HASH = os.environ.get("API_HASH", None) # YOUR API HASH
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None) # YOUR BOT TOKEN
 OWNER_ID = int(os.environ.get("OWNER_ID", 0) # YOUR USER ID
 
-bot = tg("godboy", api_id=API_ID, api_hash=API_HASH)
+bot = tg("godboy", API_ID, API_HASH)
 
 
 @bot.on(events.NewMessage(pattern="/start"))
